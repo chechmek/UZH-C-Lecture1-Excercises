@@ -1,0 +1,28 @@
+﻿  ReversePolishNotationCalculator.cpp
+C:\Users\RomanBabukh\source\repos\UZH-C-Lecture1-Excercises\ReversePolishNotationCalculator\ReversePolishNotationCalculator.cpp(16,24): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\RomanBabukh\source\repos\UZH-C-Lecture1-Excercises\ReversePolishNotationCalculator\ReversePolishNotationCalculator.cpp(18,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\RomanBabukh\source\repos\UZH-C-Lecture1-Excercises\ReversePolishNotationCalculator\ReversePolishNotationCalculator.cpp(27,23): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\RomanBabukh\source\repos\UZH-C-Lecture1-Excercises\ReversePolishNotationCalculator\ReversePolishNotationCalculator.cpp(33,23): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\RomanBabukh\source\repos\UZH-C-Lecture1-Excercises\ReversePolishNotationCalculator\ReversePolishNotationCalculator.cpp(39,23): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\RomanBabukh\source\repos\UZH-C-Lecture1-Excercises\ReversePolishNotationCalculator\ReversePolishNotationCalculator.cpp(45,23): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+  ReversePolishNotationCalculator.vcxproj -> C:\Users\RomanBabukh\Source\Repos\UZH-C-Lecture1-Excercises\x64\Debug\ReversePolishNotationCalculator.exe
