@@ -26,21 +26,29 @@ int main() {
 		}
 		else if (input == "+") {
 			float res = stack[last_index - 1] + stack[last_index];
+			stack.pop_back();
+			stack.pop_back();
 			stack.push_back(res);
 			cout << res << endl;
 		}
 		else if (input == "-") {
 			float res = stack[last_index - 1] - stack[last_index];
+			stack.pop_back();
+			stack.pop_back();
 			stack.push_back(res);
 			cout << res << endl;
 		}
 		else if (input == "*") {
 			float res = stack[last_index - 1] * stack[last_index];
+			stack.pop_back();
+			stack.pop_back();
 			stack.push_back(res);
 			cout << res << endl;
 		}
 		else if (input == "/") {
 			float res = stack[last_index - 1] / stack[last_index];
+			stack.pop_back();
+			stack.pop_back();
 			stack.push_back(res);
 			cout << res << endl;
 		}
