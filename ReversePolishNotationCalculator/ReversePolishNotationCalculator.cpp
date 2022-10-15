@@ -1,50 +1,48 @@
 #include <iostream>
-#include <stack>
+#include <vector>
 #include <string>
 
 using namespace std;
 
 int main() {
 	string input;
-	stack<float> stack; // USE VECTOR !!
-	int prevNum = 0;
+	int last_index;
+	vector<float> stack; 
 	while (true) {
 		cin >> input;
+		last_index = stack.size() - 1;
 		if (input == "q") break;
-		if (input.rfind('n', 0) == 0) { // starts with 'n'
-			if(!stack.empty())
-				prevNum = stack.top(); // save top element before adding new
-			input.erase(0, 1);
+		if (input == "n") {
+			cin >> input;
 			float num = stoi(input);
-			stack.push(num);
+			stack.push_back(num);
 		}
 		else if (input == "d") {
 			if (!stack.empty())
-				stack.pop();
+				stack.pop_back();
+		}
+		else if (stack.size() < 2) {
+			continue;
 		}
 		else if (input == "+") {
-			float sum = prevNum + stack.top();
-			prevNum = stack.top();
-			stack.push(sum);
-			cout << sum << endl;
+			float res = stack[last_index - 1] + stack[last_index];
+			stack.push_back(res);
+			cout << res << endl;
 		}
 		else if (input == "-") {
-			float diff = prevNum - stack.top();
-			prevNum = stack.top();
-			stack.push(diff);
-			cout << diff << endl;
+			float res = stack[last_index - 1] - stack[last_index];
+			stack.push_back(res);
+			cout << res << endl;
 		}
 		else if (input == "*") {
-			float mul = prevNum * stack.top();
-			prevNum = stack.top();
-			stack.push(mul);
-			cout << mul << endl;
+			float res = stack[last_index - 1] * stack[last_index];
+			stack.push_back(res);
+			cout << res << endl;
 		}
 		else if (input == "/") {
-			float div = prevNum / stack.top();
-			prevNum = stack.top();
-			stack.push(div);
-			cout << div << endl;
+			float res = stack[last_index - 1] / stack[last_index];
+			stack.push_back(res);
+			cout << res << endl;
 		}
 	}
 }
