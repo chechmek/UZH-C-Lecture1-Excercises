@@ -1,4 +1,1 @@
-﻿  ReversePolishNotationCalculator.cpp
-C:\Users\RomanBabukh\source\repos\UZH-C-Lecture1-Excercises\ReversePolishNotationCalculator\ReversePolishNotationCalculator.cpp(13,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\RomanBabukh\source\repos\UZH-C-Lecture1-Excercises\ReversePolishNotationCalculator\ReversePolishNotationCalculator.cpp(17,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  ReversePolishNotationCalculator.vcxproj -> C:\Users\RomanBabukh\Source\Repos\UZH-C-Lecture1-Excercises\x64\Debug\ReversePolishNotationCalculator.exe
+﻿
